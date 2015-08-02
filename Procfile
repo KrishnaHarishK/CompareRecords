@@ -1,1 +1,1 @@
-web: ./HelloHackathon.sh
+web: ./CompareRecords.sh
