@@ -27,7 +27,7 @@ $(END_TARGET1) : $(SOURCE_TARGETS1) $(TARGET_LIBS)
 	/bin/echo "$(END_TARGET1) linked"
 	
 $(END_TARGET2) : $(SOURCE_TARGETS2) $(TARGET_LIBS)
-	g++ -z muldefs -o $(END_TARGET2) $(SOURCE_TARGETS2) -L. -L/usr/lib -L./gtest-1.6.0/lib -lgtest -lrt -lm -lglib -lpthread 2>&1 | tee -a error.lst; chmod 775 $(END_TARGET2)
+	g++ -z muldefs -o $(END_TARGET2) $(SOURCE_TARGETS2) -L. -L/usr/lib -L./gtest-1.6.0/lib -lgtest -lrt -lm -lpthread 2>&1 | tee -a error.lst; chmod 775 $(END_TARGET2)
 	@/bin/echo "$(END_TARGET2) linked"
 
 include $(DEPEND_KLUDGE)
