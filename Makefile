@@ -17,7 +17,7 @@ SOURCE_TARGETS2 = \
 
 EXTRA_INCLUDES = -I./gtest-1.6.0/include
 
-END_TARGET1 = ./CompareRecords.sh
+END_TARGET1 = CompareRecords.sh
 END_TARGET2 = test
 
 include app.mak
